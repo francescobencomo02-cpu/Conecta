@@ -1,0 +1,397 @@
+/* ============================================
+   ESTILOS RESPONSIVE
+   ============================================ */
+
+/* Tablets */
+@media (max-width: 1200px) {
+    .app-container {
+        grid-template-columns: 260px 1fr 300px;
+    }
+
+    .right-sidebar {
+        padding: 15px;
+    }
+
+    .nav-item span:last-child {
+        display: none;
+    }
+}
+
+/* Small Laptops / Large Tablets */
+@media (max-width: 1024px) {
+    .app-container {
+        grid-template-columns: 260px 1fr;
+    }
+
+    .right-sidebar {
+        display: none;
+    }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+    html {
+        font-size: 14px;
+    }
+
+    .app-container {
+        grid-template-columns: 60px 1fr;
+    }
+
+    .sidebar {
+        padding: 10px;
+    }
+
+    .logo h2 {
+        font-size: 20px;
+    }
+
+    .nav-item {
+        padding: 10px;
+        justify-content: center;
+    }
+
+    .nav-item .icon {
+        font-size: 20px;
+    }
+
+    .nav-item span:last-child {
+        display: none;
+    }
+
+    .btn-compose {
+        padding: 10px;
+        font-size: 20px;
+        width: auto;
+    }
+
+    .main-feed {
+        border-left: none;
+        border-right: none;
+    }
+
+    .post-creator {
+        padding: 10px 15px;
+    }
+
+    .post-creator-header {
+        gap: 10px;
+    }
+
+    .avatar {
+        width: 40px;
+        height: 40px;
+    }
+
+    .post-input {
+        font-size: 16px;
+    }
+
+    .post {
+        padding: 12px 15px;
+    }
+
+    .messages-container {
+        grid-template-columns: 280px 1fr;
+    }
+
+    .conversations-header {
+        padding: 15px;
+    }
+
+    .chat-window {
+        position: relative;
+    }
+
+    /* Profile */
+    .profile-info {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .profile-avatar {
+        margin-top: -50px;
+        width: 100px;
+        height: 100px;
+    }
+
+    .profile-details h2 {
+        font-size: 20px;
+    }
+
+    .cover-photo {
+        height: 150px;
+    }
+}
+
+/* Phones */
+@media (max-width: 480px) {
+    html {
+        font-size: 12px;
+    }
+
+    .app-container {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .sidebar {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        border-right: none;
+        border-top: 1px solid var(--border-color);
+        flex-direction: row;
+        z-index: 100;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .main-nav {
+        flex-direction: row;
+        margin-bottom: 0;
+    }
+
+    .nav-item {
+        flex: 1;
+        justify-content: center;
+        padding: 8px;
+        font-size: 16px;
+    }
+
+    .btn-compose {
+        display: none;
+    }
+
+    .sidebar-footer {
+        display: none;
+    }
+
+    .main-feed {
+        padding-bottom: 70px;
+        border: none;
+    }
+
+    .post-creator {
+        padding: 10px 12px;
+    }
+
+    .post-creator-header {
+        gap: 10px;
+    }
+
+    .avatar {
+        width: 36px;
+        height: 36px;
+    }
+
+    .post-creator-footer {
+        padding-left: 46px;
+    }
+
+    .post-input {
+        font-size: 14px;
+    }
+
+    .post {
+        padding: 10px 12px;
+    }
+
+    .post-header {
+        gap: 10px;
+    }
+
+    .post-avatar {
+        width: 40px;
+        height: 40px;
+    }
+
+    .post-actions-bottom {
+        font-size: 12px;
+    }
+
+    /* Messages */
+    .messages-container {
+        grid-template-columns: 1fr;
+    }
+
+    .conversations-list {
+        display: none;
+    }
+
+    .chat-window {
+        width: 100%;
+    }
+
+    /* Auth */
+    .auth-container {
+        padding: 10px;
+    }
+
+    .auth-card {
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    .auth-header h1 {
+        font-size: 24px;
+    }
+
+    /* Profile */
+    .profile-info {
+        padding: 10px;
+    }
+
+    .profile-avatar {
+        margin-top: -40px;
+        width: 80px;
+        height: 80px;
+    }
+
+    .profile-details h2 {
+        font-size: 18px;
+    }
+
+    .profile-stats {
+        gap: 20px;
+    }
+
+    .cover-photo {
+        height: 120px;
+    }
+
+    /* Right Sidebar */
+    .right-sidebar {
+        display: none;
+    }
+
+    /* Modal */
+    .modal-content {
+        width: 95%;
+        border-radius: 10px;
+    }
+
+    .modal-header {
+        padding: 15px;
+    }
+
+    /* Notifications */
+    .notification-filters {
+        overflow-x: auto;
+        flex-wrap: nowrap;
+    }
+
+    .filter-btn {
+        white-space: nowrap;
+        font-size: 12px;
+    }
+
+    /* Search */
+    .search-box input {
+        font-size: 14px;
+    }
+}
+
+/* Extra Small Phones */
+@media (max-width: 360px) {
+    html {
+        font-size: 11px;
+    }
+
+    .sidebar {
+        padding: 8px;
+    }
+
+    .main-nav {
+        gap: 5px;
+    }
+
+    .nav-item {
+        padding: 6px;
+    }
+
+    .post-creator-footer {
+        padding-left: 40px;
+        gap: 10px;
+    }
+
+    .action-btn {
+        font-size: 16px;
+    }
+
+    .auth-card {
+        padding: 15px;
+    }
+
+    .auth-header h1 {
+        font-size: 20px;
+    }
+
+    .profile-avatar {
+        width: 70px;
+        height: 70px;
+    }
+
+    .btn {
+        padding: 8px 16px;
+        font-size: 12px;
+    }
+}
+
+/* Modo Oscuro (Opcional) */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background-color: #15202b;
+        --dark-background: #000;
+        --border-color: #38444d;
+        --text-primary: #fff;
+        --text-secondary: #8899a6;
+        --light-background: #192734;
+    }
+
+    body {
+        background-color: var(--background-color);
+        color: var(--text-primary);
+    }
+
+    .sidebar,
+    .main-feed,
+    .right-sidebar {
+        background-color: var(--background-color);
+    }
+
+    .auth-card,
+    .modal-content {
+        background-color: var(--dark-background);
+        color: var(--text-primary);
+    }
+
+    .form-group input,
+    .form-group textarea,
+    .search-box input,
+    .message-form input {
+        background-color: var(--light-background);
+        color: var(--text-primary);
+        border-color: var(--border-color);
+    }
+
+    .post,
+    .trend-item,
+    .suggestion-item {
+        background-color: var(--dark-background);
+    }
+
+    .trends,
+    .suggestions,
+    .notification-settings {
+        background-color: var(--light-background);
+    }
+}
