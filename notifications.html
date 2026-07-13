@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conecta - Notificaciones</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">
+                <h2>🌐 Conecta</h2>
+            </div>
+
+            <nav class="main-nav">
+                <a href="home.html" class="nav-item">
+                    <span class="icon">🏠</span>
+                    <span>Inicio</span>
+                </a>
+                <a href="messages.html" class="nav-item">
+                    <span class="icon">💬</span>
+                    <span>Mensajes</span>
+                </a>
+                <a href="notifications.html" class="nav-item active">
+                    <span class="icon">🔔</span>
+                    <span>Notificaciones</span>
+                </a>
+                <a href="profile.html" class="nav-item">
+                    <span class="icon">👤</span>
+                    <span>Perfil</span>
+                </a>
+            </nav>
+
+            <button class="btn btn-primary btn-compose">✍️ Componer</button>
+
+            <div class="sidebar-footer">
+                <button class="btn btn-logout" id="logoutBtn">Cerrar Sesión</button>
+            </div>
+        </aside>
+
+        <!-- Main Notifications -->
+        <main class="main-feed">
+            <section class="notifications-header">
+                <h2>Notificaciones</h2>
+                <div class="notification-filters">
+                    <button class="filter-btn active" data-filter="all">Todas</button>
+                    <button class="filter-btn" data-filter="likes">Me gusta</button>
+                    <button class="filter-btn" data-filter="comments">Comentarios</button>
+                    <button class="filter-btn" data-filter="follows">Seguidores</button>
+                </div>
+            </section>
+
+            <section id="notificationsList" class="notifications">
+                <!-- Las notificaciones se cargarán aquí -->
+                <div class="loading">Cargando notificaciones...</div>
+            </section>
+        </main>
+
+        <!-- Right Sidebar -->
+        <aside class="right-sidebar">
+            <div class="search-box">
+                <input type="text" placeholder="🔍 Buscar en Conecta...">
+            </div>
+
+            <div class="notification-settings">
+                <h3>Configuración de Notificaciones</h3>
+                <label>
+                    <input type="checkbox" checked> Menciones
+                </label>
+                <label>
+                    <input type="checkbox" checked> Me gusta
+                </label>
+                <label>
+                    <input type="checkbox" checked> Comentarios
+                </label>
+                <label>
+                    <input type="checkbox" checked> Nuevos seguidores
+                </label>
+            </div>
+        </aside>
+    </div>
+
+    <script src="database/firebase.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
